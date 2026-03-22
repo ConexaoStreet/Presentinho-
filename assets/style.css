@@ -798,3 +798,84 @@ a {
     text-align: center;
   }
 }
+
+
+.gift-timer {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 92px;
+  padding: 10px 14px;
+  border-radius: 999px;
+  background: rgba(255,255,255,.88);
+  border: 1px solid rgba(255,126,182,.16);
+  box-shadow: var(--shadow);
+  font-family: 'Baloo 2', system-ui, sans-serif;
+  font-weight: 800;
+  color: var(--pink-6);
+}
+
+.music-entry {
+  background: linear-gradient(180deg, #fff, #ffe8f2);
+  color: var(--pink-6);
+  border: 1px solid rgba(255,126,182,.18);
+}
+
+.expired-screen {
+  position: fixed;
+  inset: 0;
+  z-index: 120;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background: radial-gradient(circle at top, rgba(255,246,251,.99), rgba(255,232,243,.99));
+}
+
+.expired-screen.show {
+  display: flex;
+}
+
+.expired-box {
+  width: min(560px, 100%);
+  text-align: center;
+  padding: 34px 24px;
+  border-radius: 34px;
+  background: linear-gradient(180deg, rgba(255,255,255,.96), rgba(255,239,246,.95));
+  border: 2px solid rgba(255,126,182,.18);
+  box-shadow: 0 30px 90px rgba(255, 88, 155, 0.18);
+}
+
+.expired-kitty {
+  width: 92px;
+  height: 92px;
+  margin: 0 auto 14px;
+  border-radius: 999px;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(180deg, #fff, #ffdceb);
+  box-shadow: var(--shadow);
+  font-size: 2.7rem;
+}
+
+.expired-mini {
+  margin: 0 0 6px;
+  font-family: 'Baloo 2', system-ui, sans-serif;
+  font-size: .85rem;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: var(--pink-6);
+}
+
+.expired-box h2 {
+  margin: 0 0 12px;
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  line-height: 1;
+}
+
+.expired-box p {
+  margin: 0;
+  font-size: 1.04rem;
+  line-height: 1.9;
+  font-weight: 700;
+}
