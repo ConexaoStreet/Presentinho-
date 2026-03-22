@@ -50,6 +50,7 @@
         <a href="#galeria">Galeria</a>
         <a href="#playlist">Playlist</a>
         <a href="#final" class="menu-love">Nosso cantinho</a>
+        <span id="giftTimer" class="gift-timer" hidden>⏳ 10 00</span>
       </nav>
     </div>
   </header>
@@ -65,6 +66,7 @@
         </p>
 
         <div class="hero-actions">
+          <button class="btn music-entry" id="musicEntry" type="button">🎵 tocar nossa musiquinha</button>
           <a class="btn primary" href="#sobre">Entrar no nosso mundinho</a>
           <a class="btn secondary" href="#cartinhas">Ler minhas cartinhas</a>
         </div>
@@ -323,7 +325,7 @@
   <div id="surpriseModal" class="modal" aria-hidden="true">
     <div class="modal-box">
       <button class="close-modal" id="closeModal" aria-label="Fechar">×</button>
-      <div class="modal-icon">💖</div>
+      <div class="modal-icon">🎀</div>
       <h3>Surpresa</h3>
       <p>
         Se eu pudesse eu te daria um mundinho inteiro cor de rosa
@@ -331,6 +333,18 @@
         cheio de brilho
         cheio de amor
         e no meio dele teria você sendo a parte mais linda de tudo.
+      </p>
+    </div>
+  </div>
+
+  <div id="expiredScreen" class="expired-screen" aria-hidden="true">
+    <div class="expired-box">
+      <div class="expired-kitty">🎀</div>
+      <p class="expired-mini">presentinho encerrado</p>
+      <h2>Vc viu meu presentinho, minha estrelinha</h2>
+      <p>
+        Esse cantinho foi feito só pra esse momento
+        Agora ele virou só uma lembrancinha fofinha no seu coração
       </p>
     </div>
   </div>
